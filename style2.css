@@ -1,0 +1,218 @@
+<!--Sourcecode for CSS Homepage-->
+
+
+
+:root {
+    --gradient: linear-gradient(
+      180deg,
+      rgba(45, 112, 1253, 0.73) 0%,
+      #163e92 100%
+    );
+  }
+  body {
+    background: var(--gradient);
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color:#957DAD;
+  }
+  .btn {
+    color: blue;
+    font-size: 1.1rem;
+    padding: 0.7rem 1.5rem;
+    border-radius: 0.3rem;
+    background-color: #DDA0DD;
+    border: none;
+    position: absolute;
+    right: 0.5rem;
+    bottom: 0.5rem;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    margin: 0;
+    color:blueviolet;
+  }
+  
+  /* Todo Container */
+  
+  .todo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 2rem;
+    background: #F8F4Ff;
+    padding: 3rem;
+    height: 50%;
+    width: 60%;
+    box-shadow: 0 1rem 3rem 1rem rgba(0, 23, 71, 0.15);
+    max-width: 30rem;
+  }
+  
+  h2 {
+    text-transform: uppercase;
+    height: 3rem;
+    color: #4B0082;
+    text-align: center;
+  }
+  
+  .input {
+    position: relative;
+    display: flex;
+    color:#957DAD;
+  }
+  
+  .input-field {
+    width: 100%;
+    border: 0.06rem solid blue;
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    font-size: 1rem;
+    color:#957DAD;
+  }
+  
+  input[type="text"]::placeholder {
+    color: blueviolet;
+  }
+  
+  .todo-container {
+    display: flex;
+    gap: 1rem;
+    color:#2d70fd;
+  }
+  
+  ul {
+    padding: 0;
+    margin: 0;
+    overflow-y: scroll;
+  }
+  
+  li {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    padding: 1.3rem;
+  }
+  
+  #todoList p {
+    display: flex;
+    gap: 1rem;
+    color: #957DAD;
+    align-items: center;
+  }
+  
+  #todoList .disabled {
+    color: #1E7561;
+  }
+  
+  .disabled {
+    display: flex;
+    text-decoration: line-through;
+    color:#DDA0DD;
+  }
+  
+  input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+    color:#DDA0DD;
+  }
+  
+  input[type="checkbox"]::before {
+    content: "\2713";
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.7rem;
+    text-align: center;
+    border: 0.06rem solid #957DAD;
+    border-radius: 50%;
+    color: #716C9F;
+  }
+  
+  input[type="checkbox"]:checked::before {
+    color: blueviolet;
+    background-color: #957DAD;
+    border: 0.06rem solid blueviolet;
+    border-radius: 50%;
+  }
+  
+  .counter {
+    border: 0.06rem solid #DDA0DD;
+    color:#DDA0DD;
+  }
+  
+  .counter-container {
+    height: 2rem;
+    display: flex;
+    justify-content: space-between;
+    color: #716C9F;
+  }
+  
+  .counter-container p {
+    align-self: center;
+    color:#716C9F;
+  }
+  
+  .counter-container button {
+    border: none;
+    background-color: transparent;
+    color: #4B0082;
+    font-size: 1rem;
+  }
+  
+  .footer {
+    display: flex;
+    gap: 1.8rem;
+    background-color: white;
+    padding: 1.2rem;
+    border-radius: 0.5rem;
+    color:#957DAD;
+  }
+  
+  .made-by,
+  .author {
+    font-size: 0.9rem;
+    color:#957DAD;
+  }
+  
+  .made-by {
+    color: red;
+  }
+  
+  .author {
+    color: green;
+    font-weight: bold;
+  }
+  
+  .scroll {
+    height: 15rem;
+    scrollbar-width: thin;
+    color:#DDA0DD;
+  }
+  
+  .scroll::-webkit-scrollbar {
+    width: 0.6rem;
+    color:#DDA0DD;
+  }
+  
+  .scroll::-webkit-scrollbar-thumb {
+    background-color: blueviolet;
+    border-radius: 0.5rem;
+    outline-color: #DDA0DD;
+    color:#957DAD;
+  }
+  
+  .scroll::-webkit-scrollbar-track {
+    display: none;
+    color:#957DAD;
+  }
